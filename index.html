@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- підключення css -->
+
+    <style>
+      ul {
+        list-style: none;
+      }
+      /* p{
+
+      } */
+
+      .contacts-list {
+        list-style: none;
+      }
+
+      .img {
+        width: 200px;
+      }
+    </style>
+
+    <title>css</title>
   </head>
   <body>
     <header>
@@ -16,16 +36,16 @@
         </ul>
       </nav>
 
-      <ul>
-        <li><a href=""></a>asdasd@asdas.com</li>
-        <li><a href="">+380 404 903 920</a></li>
+      <ul class="contacts-list active minus asdasdas">
+        <li class="contact-item"><a class="contact-link" href=""></a>asdasd@asdas.com</li>
+        <li class="contact-item"><a class="contact-link" href="">+380 404 903 920</a></li>
       </ul>
     </header>
 
     <main>
       <section>
-        <h2></h2>
-        <img style="width: 200px" width="200" src="./imgs/img.jpg" alt="" />
+        <h1 class="hero-heading">Ефективні рішення для вашого бізнесу</h1>
+        <img class="img" style="width: 500px" src="./imgs/img.jpg" alt="" />
       </section>
     </main>
   </body>
