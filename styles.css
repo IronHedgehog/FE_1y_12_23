@@ -1,7 +1,24 @@
+:root {
+  --accent-color: #2196f3;
+  --text-color: #810fe1;
+  --text-section-background: #0fe16b;
+  --gap: 30px;
+}
+
+/* #main {
+  background-color: black;
+} */
+
+.main {
+  /* background-color: blue !important; */
+  font-size: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
+
 .img {
   width: 100px;
 }
@@ -48,4 +65,67 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+}
+
+p {
+  /* font-size: 60px; */
+}
+
+/* Комбінований селектор */
+.header-list li a {
+  color: red;
+}
+/* селектор id */
+#section {
+  width: 200px;
+}
+/* cелектор групи тегів */
+ul,
+ol,
+h1 {
+  list-style: none;
+}
+/*  селектор нащадку*/
+header a {
+  color: blueviolet;
+}
+
+nav > ul {
+}
+
+button[type='button'] {
+  display: block;
+  width: 200px;
+}
+
+body {
+}
+
+.main-text {
+  /* Ефективні рішення для вашого бізнесу */
+  /* --text-color: red; */
+
+  font-family: 'Roboto';
+
+  font-weight: 900;
+
+  font-size: 44px;
+
+  line-height: 60px;
+
+  color: var(--text-color, black);
+
+  background-color: var(--text-section-background);
+}
+
+.main {
+  font-size: 24px;
+}
+
+#p2 {
+  background-color: black;
+}
+
+.p2 {
+  background-color: red;
 }
