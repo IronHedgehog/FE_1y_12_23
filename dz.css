@@ -1,0 +1,27 @@
+/* .text-box > h3 {
+  color: pink;
+} */
+
+.heading {
+  color: pink;
+}
+
+#greycol {
+  color: grey;
+}
+
+.text-box > div > p {
+  color: red;
+}
+
+.green-color {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.yellow:hover {
+  color: black;
+}
