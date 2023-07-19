@@ -1,6 +1,77 @@
+@font-face {
+  font-family: 'Bungee Spice';
+  src: url(./fonts/Bungee/BungeeSpice-Regular.ttf);
+  src: url(./fonts/Bungee/BungeeSpice-Regular.ttf);
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 50px;
+  background-color: grey;
 }
+
+.text {
+  font-family: 'Ubuntu', sans-serif;
+
+  color: #b4ad9e;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.title {
+  font-family: 'Bungee Spice', sans-serif;
+
+  /* color: #b4ad9e; */
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.t {
+  color: black;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+}
+
+.list li:last-child {
+  background-color: black;
+}
+
+.button:focus {
+  outline: none;
+  border: 50px solid red;
+}
+
+.button:hover {
+  background-color: blue;
+}
+
+.B {
+}
+
+#A {
+}
+
+[type='submit'] {
+}
+
+body {
+}
+/* font-family: Playfair Display
+  400
+*/
+
+/* font-family: Ubuntu;
+ 300
+*/
