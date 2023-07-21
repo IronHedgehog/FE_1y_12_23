@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 @font-face {
   font-family: 'Bungee Spice';
   src: url(./fonts/Bungee/BungeeSpice-Regular.ttf);
@@ -35,12 +41,14 @@ body {
 }
 
 .t {
-  color: black;
+  text-transform: capitalize;
+  color: red;
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 38px;
+  /* font-style: italic; */
+  font-weight: 900;
+  line-height: 34px;
   letter-spacing: 0.5px;
 }
 
@@ -75,3 +83,25 @@ body {
 /* font-family: Ubuntu;
  300
 */
+
+.txt {
+  /* padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 40px;`
+  padding-left: 50px;
+
+  padding: 20px 30px 40px 50px;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+
+  border: 5px solid red;
+
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+
+  margin: 20px 30px 40px 50px; */
+}
