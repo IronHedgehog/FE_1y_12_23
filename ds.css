@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 17px;
+  padding-bottom: 12px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-body {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo {
+  width: 98px;
+  height: 33px;
+
+  color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-right: 630px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.nav-link {
+  color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* SERVICES */
+
+.amazing-services {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.before-heading {
+  color: #333;
+  font-family: Kaushan Script, monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-item:not(:last-child) {
+  margin-right: 125px;
+}
+.servic-heading {
+  color: #333;
+  font-family: Kaushan Script;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.services-desk {
+  width: 275.78px;
+
+  color: #b6b6b6;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 146.667% */
+}
