@@ -11,12 +11,15 @@ ol {
 }
 .list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
+  /* justify-content: center;
+  align-content: center; */
 
-  row-gap: 100px;
-  column-gap: 50px;
+  /* row-gap: 100px;
+  column-gap: 50px; */
 
   /* gap: 30px; */
 
