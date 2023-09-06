@@ -196,3 +196,23 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.textt::selection {
+  color: green;
+  background-color: beige;
+}
+
+.textt {
+  width: 1000px;
+  height: 1000px;
+  /* background-image: url(./jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+
+  background: url(./jpg.jpg) center / cover no-repeat;
+}
+
+.textt::before {
+  content: '';
+}
