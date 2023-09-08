@@ -116,8 +116,7 @@ img {
 }
 
 /* Псевдоелементи */
-
-.par {
+` .par {
   color: #757575;
   font-family: Roboto;
   font-size: 26px;
@@ -125,6 +124,11 @@ img {
   font-weight: 400;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .par::first-letter {
@@ -215,4 +219,33 @@ img {
 
 .textt::before {
   content: '';
+}
+
+.third {
+  /* vw(viewport width) - відносна одиниця до ширини області бачення браузеру */
+  width: 100vw;
+  /* vw(viewport height) - відносна одиниця до висоти області бачення браузеру */
+  height: 100vh;
+
+  /* background-image: ; */
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  /* background-size: contain; */
+  background: grey;
+  background: linear-gradient(
+    146deg,
+    rgba(80, 255, 0, 1) 12%,
+    rgba(237, 0, 255, 1) 35%,
+    rgba(0, 255, 14, 1) 57%,
+    rgba(31, 0, 255, 1) 87%
+  );
+  background: rgb(255, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 1) 12%,
+    rgba(209, 255, 0, 1) 35%,
+    rgba(0, 255, 14, 1) 57%,
+    rgba(187, 6, 204, 1) 63%,
+    rgba(0, 255, 177, 1) 87%
+  );
 }
