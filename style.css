@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 ul,
@@ -13,270 +13,69 @@ ol {
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
-.cards {
-  padding: 94px 0;
+.list {
+  display: flex;
+  justify-content: center;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.card-list {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-
-  /* row-gap: 30px;
-  column-gap: 30px; */
-
-  gap: 30px 30px;
-}
-
-.card-img {
-  width: 370px;
-}
-
-/* Абсолютні - 1 */
-
-/* px-абсолютна одиниця вимірювання - не змінна величина яку ви вписуєте один раз */
-
-/* Відносні - 3 */
-
-/* % - відносна величина відносно батьківського елементу */
-/*  em - відносна величина яка відноситься до батьківського елементу */
-/* rem - відносна величина яка відноситься до основного тегу сторінки (html)*/
-
-/* html {
-  font-size: 30px;
-} */
-
-.card-item {
-  font-size: 40px;
-}
-
-.card-heading {
-  width: 322px;
-  margin: 0 auto;
-
-  color: #212121;
-  font-family: Roboto;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px; /* 200% */
-  letter-spacing: 1.08px;
-}
-
-.card-description {
-  width: 10%;
-  margin: 0 auto;
-
-  color: #757575;
-  font-family: Roboto;
-  font-size: 0.7em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.48px;
-}
-
-.card-description:hover {
-  color: red;
-}
-.card-description:active {
-  color: green;
-}
-
-.card-item:first-child {
-  /* background-color: brown; */
-}
-
-.card-item:nth-child(3n) {
-  background-color: green;
-}
-
-.card-item:not(:last-child) {
-  /* background-color: yellowgreen; */
-}
-
-/* .btn {
+.list-item {
   width: 200px;
-  height: 200px;
-  background-color: yellow;
-}
-.btn:focus {
-  background-color: black;
-} */
 
-/* Псевдоелементи */
-.par {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.48px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
 
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
-.par::first-letter {
-  font-size: 30px;
-  color: brown;
+.list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.par::first-line {
-  color: aquamarine;
-  font-size: 50px;
-}
-
-.par::selection {
-  background-color: blue;
-  color: yellow;
-}
-
-.par::before {
-  content: ''; /* Обовʼязково для існування псевдоєлементу ,значення має бути пустою строкою*/
+.list-item::before {
+  content: '';
 
   display: block;
 
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 140px;
+
   background-color: grey;
 
   margin-bottom: 30px;
-  padding: 15px;
-}
 
-.par::after {
-  content: '';
-
-  display: block;
-  width: 100px;
-  height: 100px;
-
-  background-color: black;
-}
-
-.card-item::before {
-  content: '';
-
-  display: block;
-
-  width: 270px;
-  height: 120px;
-
-  margin: 0 auto 30px;
-
-  border-radius: 4px;
-  background: #f5f4fa;
-
+  background-image: url(./diagram\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.diagrama::before {
-  background-image: url(./diagram\ 1.png);
-}
-
-.astr::before {
+.astro::before {
   background-image: url(./astronaut\ 1.png);
 }
 
-.cards {
-  background-image: url(./back.jpg);
-  background-position: center;
+.clock::before {
+  background-image: url(./clock\ 1.png);
+}
+
+section {
+  /* background: rgb(187, 6, 204);
+  background: linear-gradient(27deg, rgba(187, 6, 204, 1) 21%, rgba(0, 255, 177, 1) 87%); */
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url(./astronaut\ 1.png), url(./antena.png), url(./back.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: left, right, center;
 }
 
-.textt::selection {
-  color: green;
-  background-color: beige;
-}
-
-.textt {
-  width: 1000px;
-  height: 1000px;
-  /* background-image: url(./jpg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-
-  background: url(./jpg.jpg) center / cover no-repeat;
-}
-
-.textt::before {
-  content: '';
-}
-
-.third {
-  /* vw(viewport width) - відносна одиниця до ширини області бачення браузеру */
-  width: 100vw;
-  /* vw(viewport height) - відносна одиниця до висоти області бачення браузеру */
-  height: 100vh;
-
-  /* background-image: ; */
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center, left, right;
-  /* background-size: contain; */
-  background: grey;
-  background: linear-gradient(
-    146deg,
-    rgba(80, 255, 0, 1) 12%,
-    rgba(237, 0, 255, 1) 35%,
-    rgba(0, 255, 14, 1) 57%,
-    rgba(31, 0, 255, 1) 87%
-  );
-  background: rgb(255, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(255, 0, 0, 1) 12%,
-    rgba(209, 255, 0, 1) 35%,
-    rgba(0, 255, 14, 1) 57%,
-    rgba(187, 6, 204, 1) 63%,
-    rgba(0, 255, 177, 1) 87%
-  );
-}
-
-.class {
-  /* vw(viewport width) - ширина області бачення браузера
-  vh(viewportheight) - висота області бачення браузеру
-  */
-  /* width: 50vw; */
-  /* height: 100vh; */
-}
-
-.btn {
-  background-color: red;
-}
-
-.btn:hover {
-  background-color: yellow;
-}
-
-.dropdown-menu {
-  background-color: black;
-}
-
-.carousel-control-prev-icon {
-  fill: red;
-  stroke: red;
-  background-color: red;
-  color: yellow;
-}
-
-.li:hover > .heart {
-  fill: red;
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
