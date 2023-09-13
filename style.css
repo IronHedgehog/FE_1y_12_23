@@ -106,17 +106,17 @@ img {
   /* background-color: yellowgreen; */
 }
 
-.btn {
+/* .btn {
   width: 200px;
   height: 200px;
   background-color: yellow;
 }
 .btn:focus {
   background-color: black;
-}
+} */
 
 /* Псевдоелементи */
-` .par {
+.par {
   color: #757575;
   font-family: Roboto;
   font-size: 26px;
@@ -248,4 +248,35 @@ img {
     rgba(187, 6, 204, 1) 63%,
     rgba(0, 255, 177, 1) 87%
   );
+}
+
+.class {
+  /* vw(viewport width) - ширина області бачення браузера
+  vh(viewportheight) - висота області бачення браузеру
+  */
+  /* width: 50vw; */
+  /* height: 100vh; */
+}
+
+.btn {
+  background-color: red;
+}
+
+.btn:hover {
+  background-color: yellow;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.carousel-control-prev-icon {
+  fill: red;
+  stroke: red;
+  background-color: red;
+  color: yellow;
+}
+
+.li:hover > .heart {
+  fill: red;
 }
