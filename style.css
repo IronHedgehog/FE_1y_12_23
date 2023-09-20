@@ -79,3 +79,34 @@ section {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.box {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 200px;
+
+  position: relative;
+}
+
+.box:hover::before {
+  content: '';
+
+  display: block;
+  position: absolute;
+
+  /* width: 100%; */
+
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+
+  background: rgb(204, 203, 6);
+  background: linear-gradient(
+    27deg,
+    rgba(204, 203, 6, 0.6321122198879552) 17%,
+    rgba(27, 0, 255, 0.6741290266106443) 87%
+  );
+
+  box-shadow: -15px -23px 28px 0px #333;
+}
