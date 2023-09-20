@@ -5,6 +5,49 @@
   border: 0;
 }
 
+.div1 {
+  width: 500px;
+  height: 500px;
+
+  padding: 100px;
+  border: 30px solid black;
+}
+
+.list-unstyled {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  order: 2;
+}
+
+.div1 {
+  /* background-position: ;
+  background-size: ;
+  background-repeat: ; */
+  background: url(./Img.jpg) center / cover no-repeat;
+}
+
+.li::after {
+  content: '';
+  display: block;
+
+  width: 100px;
+  height: 100px;
+
+  background-image: url(./antena.png);
+
+  background-color: red;
+}
+
+.li {
+  background-color: aqua;
+  order: 1;
+}
 ul,
 ol {
   list-style: none;
