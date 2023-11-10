@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'black';
-  src:  url('fonts/black.eot?tsmj6o');
-  src:  url('fonts/black.eot?tsmj6o#iefix') format('embedded-opentype'),
-    url('fonts/black.ttf?tsmj6o') format('truetype'),
-    url('fonts/black.woff?tsmj6o') format('woff'),
-    url('fonts/black.svg?tsmj6o#black') format('svg');
+  font-family: 'icon-font';
+  src: url('fonts/icon-font.eot?ogst42');
+  src: url('fonts/icon-font.eot?ogst42#iefix') format('embedded-opentype'),
+    url('fonts/icon-font.ttf?ogst42') format('truetype'),
+    url('fonts/icon-font.woff?ogst42') format('woff'),
+    url('fonts/icon-font.svg?ogst42#icon-font') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.icon {
+.font {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'black' !important;
+  font-family: 'icon-font' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,12 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-astronaut:before {
-  content: "\e900";
+.icon-frame:before {
+  content: '\e900';
 }
-.icon-envelope:before {
-  content: "\e901";
+.icon-iconoir_graph-up:before {
+  content: '\e901';
 }
-.icon-facebook:before {
-  content: "\e902";
+.icon-iconoir_home:before {
+  content: '\e902';
+}
+.icon-iconoir_large-suitcase:before {
+  content: '\e903';
+}
+.icon-camera-retro:before {
+  content: '\f083';
 }
