@@ -1,4 +1,86 @@
-.text {
-  color: blue;
-  font-size: 20px;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.red {
+  background-color: red;
+  /* static = Значення position за замовчуванням */
+  position: static;
+  z-index: 15;
+
+  top: 50%;
+  left: 50%;
+}
+
+.yellow {
+  background-color: yellow;
+
+  /* Fixed =Виймання елементу з стандартного потоку сторінки, фіксування елементу на одному місці на екрані */
+  position: fixed;
+  z-index: 13;
+
+  /* bottom - відступ з низу */
+  /* right =  відступ справа */
+  bottom: 20px;
+  right: 30px;
+
+  /* Властивості які дозволяють розмістити спозиціоновані елементи, ці властивості працюють тільки з спозиціонованими елементами окремими від static */
+  /* top: ;
+  left: ;
+  right: ;
+  bottom: ; */
+}
+
+body {
+  /* height: 1000000px; */
+}
+.grey {
+  background-color: grey;
+
+  /* absolute =  Виймання елементу з стандартного потоку сторінки,ми можемо розмістити де завгодно в рамках сторінки */
+  position: absolute;
+  /* z-index:відповідає за глибину, значення за замовчуванням 0, буває як додатнім так і відʼємним */
+  z-index: 11;
+
+  top: 40%;
+  left: 40%;
+}
+
+.capture {
+  /* sticky = липке позиціонування, липне до батьківського елементу і скролиться по ньому від початку до кінця */
+  position: sticky;
+  top: 0;
+  background-color: red;
+}
+
+.blue {
+  background-color: green;
+
+  /* relative =  зберігає за собою місце в черзі елментів,може вільно переміщуватись по сторінці за допомогою властивостей left right bottom top */
+  position: relative;
+  top: 40%;
+  left: 40%;
+  z-index: 12;
+}
+
+.color {
+  background-color: black;
+}
+
+.big-box {
+  background-color: darkkhaki;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
