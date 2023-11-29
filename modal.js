@@ -1,7 +1,10 @@
 (() => {
   const refs = {
+    // Знаходимо кнопку яка відкриває модальне вікно та у якої є АТРИБУТ data-modal-open
     openModalBtn: document.querySelector('[data-modal-open]'),
+    // Знаходимо кнопку яка відкриває модальне вікно та у якої є АТРИБУТ data-modal-open
     closeModalBtn: document.querySelector('[data-modal-close]'),
+    // Знаходимо МОДАЛЬНЕ ВІКНО   у якого є АТРИБУТ data-modal
     modal: document.querySelector('[data-modal]'),
   };
 
@@ -13,5 +16,3 @@
     document.body.classList.toggle('no-scroll');
   }
 })();
-
-// {/* <script src="https://kit.fontawesome.com/ecf131a3d2.js" crossorigin="anonymous"></script>; */}

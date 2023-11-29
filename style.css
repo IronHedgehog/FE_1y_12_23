@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(16, 108, 184, 0.5);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  /* opacity: 0 не видно , opacity 1 видно. також підтримуються числа від 0 до 1 з плаваючою крапкою */
+  opacity: 0;
+  /* visibility: hidden; */
+  /* Забороняє кліки по модалці та будь-які інші івенти мишки */
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background-color: violet;
+}
+
+.open {
+  width: 300px;
+  height: 250px;
+  background-color: aquamarine;
+}
