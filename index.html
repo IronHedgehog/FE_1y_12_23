@@ -17,6 +17,41 @@
     <main>
       <section>
         <div>
+          <form action="">
+            <label for="email">E-mail</label>
+            <!-- placeholder = підказка користувачу -->
+            <!-- autocomplete = забороняємо автозаповнення інпуту  -->
+            <!--minlength - мінімальне значення кількості символів  -->
+            <!--maxlength - максимальне значення кількості символів  -->
+            <!-- required = робить поле обовʼязковим для заповнення -->
+            <input type="text" />
+            <input
+              id="email"
+              type="email"
+              placeholder="email"
+              autocomplete="off"
+              required
+              minlength="10"
+              maxlength="20"
+            />
+            <!-- pattern = регулярний вираз (REGEXP) - відповідає за більш складні перевірки поля наприклад кількість символів, має бути одна велика буква,доступні лише латинскі літери -->
+            <!-- title = дозволяє нам описати текст помилки вводу -->
+            <label
+              >Password
+              <input
+                type="password"
+                placeholder="password"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                title="Мінімум вісім символів, принаймні одна літера та одна цифра"
+                required
+              />
+            </label>
+            <input type="radio" />
+            <input type="range" />
+            <input type="checkbox" />
+
+            <button type="submit">SUBMIT</button>
+          </form>
           <h2></h2>
         </div>
       </section>
@@ -979,6 +1014,6 @@
       </div>
     </div>
 
-    <script src="./modal.js" type="module"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>

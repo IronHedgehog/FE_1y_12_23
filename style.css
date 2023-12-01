@@ -7,11 +7,16 @@
 
 .backdrop {
   position: fixed;
+
+  /* width: 100vw;
+  height: 100vh; */
+
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(16, 108, 184, 0.5);
+  background-color: rgba(234, 153, 20, 0.6);
+  /* background-color: rgb(255, 0, 0); */
 }
 
 .no-scroll {
@@ -33,11 +38,21 @@
   width: 600px;
   height: 600px;
   transform: translate(-50%, -50%);
-  background-color: violet;
+  background-color: rgb(214, 1, 214);
 }
 
 .open {
   width: 300px;
   height: 250px;
   background-color: aquamarine;
+}
+
+input {
+  width: 200px;
+  height: 200px;
+  color: red;
+  background-color: green;
+}
+input::placeholder {
+  color: darkblue;
 }
