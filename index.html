@@ -9,8 +9,43 @@
     <title>Document</title>
   </head>
   <body>
+    <section>
+      <div>
+        <ul>
+          <li>
+            <img src="" alt="" />
+            <p></p>
+          </li>
+          <li>
+            <!-- Щоб спозиціонувати елемент один відносно одного (текст відносно картинки) то їм треба створити спільний батьківський елемент  -->
+            <div class="divvv">
+              <img src="./img.jpg" alt="" />
+              <p class="textt">Мобільні додатки</p>
+            </div>
+          </li>
+          <li>
+            <img src="" alt="" />
+            <p></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      Recusandae perspiciatis vel unde enim quasi laborum fuga excepturi, iusto illo alias.
+    </div>
+
     <button class="open" data-modal-open>Open modal</button>
     <header>
+      <!-- select - Випадаючий список -->
+      <select style="background-color: red">
+        <!-- option- один з варіантів випадаючого списку -->
+        <option value="1"><a href="#er">Перший розділ</a></option>
+        <option value="2">Другий розділ</option>
+        <option value="3">Третій розділ</option>
+        <option value="4">Четвертий розділ</option>
+      </select>
       <a href=""></a>
       <nav></nav>
     </header>
@@ -18,39 +53,45 @@
       <section>
         <div>
           <form action="">
-            <label for="email">E-mail</label>
-            <!-- placeholder = підказка користувачу -->
-            <!-- autocomplete = забороняємо автозаповнення інпуту  -->
-            <!--minlength - мінімальне значення кількості символів  -->
-            <!--maxlength - максимальне значення кількості символів  -->
-            <!-- required = робить поле обовʼязковим для заповнення -->
-            <input type="text" />
-            <input
-              id="email"
-              type="email"
-              placeholder="email"
-              autocomplete="off"
-              required
-              minlength="10"
-              maxlength="20"
-            />
-            <!-- pattern = регулярний вираз (REGEXP) - відповідає за більш складні перевірки поля наприклад кількість символів, має бути одна велика буква,доступні лише латинскі літери -->
-            <!-- title = дозволяє нам описати текст помилки вводу -->
-            <label
-              >Password
+            <div>
+              <label for="email">E-mail</label>
+              <!-- placeholder = підказка користувачу -->
+              <!-- autocomplete = забороняємо автозаповнення інпуту  -->
+              <!--minlength - мінімальне значення кількості символів  -->
+              <!--maxlength - максимальне значення кількості символів  -->
+              <!-- required = робить поле обовʼязковим для заповнення -->
+              <input type="text" />
               <input
-                type="password"
-                placeholder="password"
-                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-                title="Мінімум вісім символів, принаймні одна літера та одна цифра"
+                id="email"
+                type="email"
+                placeholder="email"
+                autocomplete="off"
                 required
+                minlength="10"
+                maxlength="20"
               />
-            </label>
+              <!-- pattern = регулярний вираз (REGEXP) - відповідає за більш складні перевірки поля наприклад кількість символів, має бути одна велика буква,доступні лише латинскі літери -->
+              <!-- title = дозволяє нам описати текст помилки вводу -->
+              <label
+                >Password
+                <input
+                  type="password"
+                  placeholder="password"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                  title="Мінімум вісім символів, принаймні одна літера та одна цифра"
+                  required
+                />
+              </label>
+            </div>
+            <input type="radio" />
+            <input type="radio" />
             <input type="radio" />
             <input type="range" />
             <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
 
-            <button type="submit">SUBMIT</button>
+            <button type="submit" disabled>SUBMIT</button>
           </form>
           <h2></h2>
         </div>
@@ -72,7 +113,7 @@
           </p>
         </div>
       </section>
-      <section>
+      <section id="er">
         <div>
           <h2></h2>
           <p>
@@ -1000,17 +1041,20 @@
       <div class="modal">
         <button class="close" data-modal-close>Закрити</button>
         <p>Hello, modal</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui voluptatem iusto
-          perferendis omnis. Hic, quod assumenda! Laboriosam est eaque cumque expedita suscipit,
-          laborum saepe commodi hic ratione, delectus repellat incidunt. Facere optio accusamus quo
-          tenetur vitae illo quasi culpa! Assumenda optio excepturi beatae rerum quasi minus quis
-          nihil exercitationem fugiat dignissimos. Repellat libero esse vero molestias incidunt
-          perferendis, distinctio quibusdam dolorem consectetur nobis sint neque exercitationem
-          voluptas laudantium maiores cupiditate, voluptatum similique nam. Nesciunt sapiente
-          laudantium ullam saepe nam quas praesentium necessitatibus fugit dignissimos voluptatem,
-          et quia! Obcaecati, non sit soluta odio id laboriosam est nesciunt porro maiores deserunt!
-        </p>
+        <form action="">
+          <div class="divv">
+            <input type="text" />
+            <i class="fa-solid fa-user ico"></i>
+          </div>
+          <div class="divv">
+            <input type="text" />
+            <i class="fa-solid fa-phone ico"></i>
+          </div>
+          <div class="divv">
+            <input type="text" />
+            <i class="fa-solid fa-envelope ico"></i>
+          </div>
+        </form>
       </div>
     </div>
 
