@@ -84,6 +84,26 @@ ul {
   transform: translate(0);
 }
 
+/* PERSPECTIVE на наступний раз */
+.class {
+  /* vw = viewport width  = 30% ширини вашого простору браузера*/
+  width: 30vw;
+  /* vh = viewport height = висота вашого простору браузеру*/
+  height: 100vh;
+  background-color: green;
+
+  transform: translate(-97%);
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* ДЛЯ CSS переходу є дві властивості обовʼязкових це transition та transform */
+  /* transform: perspective(200px);
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1); */
+}
+
+.class:hover {
+  transform: translate(0);
+  /* transform: perspective(400px); */
+}
+
 /* Код можна знайти за посиланням https://github.com/IronHedgehog/FE_1y_12_23/tree/26-modal */
 
 /* Розбі]р дз */
