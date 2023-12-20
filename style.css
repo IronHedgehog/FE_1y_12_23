@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.backdrop {
+  /* Виймає елемент с потоку html для того щоб ми могли перекрити весь екран */
+
+  /* fixed = для того щоб наше модальне вікно було завжди на екрані у коистувача */
+  position: fixed;
+
+  /* Спосіб розтягнути задній фон на весь екран №1 */
+  /* bottom top left  right = 4 властивості які відповідають за те щоб розтягнути наш елемент на весь екран*/
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* Спосіб розтягнути задній фон на весь екран №2 */
+  /* vw = viewport width = ширина боді */
+  /* vh = viewport height = висота боді */
+  /* width: 100vw;
+  height: 100vh; */
+
+  /* Спосіб розтягнути задній фон на весь екран №3 */
+  /* width: 100%;
+  height: 100%; */
+
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: tomato; */
+
+  transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* .backdrop.ishidden = перша частина селектору яка означає, що існує елемент у якого одночасно є ці два класи(.backdrop.is-hidden) */
+
+/* .modal = друга частина селектору яка відповідає за знаходження дитячого елементу з класом модал */
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) skew(20deg, 15deg);
+}
+
+/* Елемент знаходиться посередині */
+.modal {
+  /* position: absolute; = щоб вийнути елемент з потоку та спозиціонувати відносно батьківського елементу(backdrop) */
+  position: absolute;
+  /* top,left = в данному випадку нам потрібні щоб змістити верхній лівий кут в центр екрану */
+  top: 50%;
+  left: 50%;
+  /* transform: translate = переміщення елементу(modal) на -50% по осі Х та по осі У  */
+  transform: translate(-50%, -50%) scale(1) skew(0deg, 0deg);
+
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  width: 528px;
+  height: 581px;
+
+  /* закруглення кутів модального вікна на 4px */
+  border-radius: 4px;
+  /*  Задній фон роботи білим*/
+  background-color: #fff;
+  /* ТІНІ */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Приховує модальне вікно */
+.is-hidden {
+  /* opacity - властивість яка перекладається дослівно як ПРОЗОРІСТЬ. Може набувати значень від 0 до 1 (0 = не видно. 1 = видно) може набувати дробних значень наприклад(0.1,0.2,0.5 0,7) */
+  opacity: 0;
+
+  /* visibility = бачимість елементу= може брати значення HIDDEN(не видно) та VISIBLE (видно) */
+  /* visibility: hidden; */
+  /* ЗАБОРОНЯЄ ВСІ ІВЕНТИ МИШКИ НА ЕЛЕМЕНТІ*/
+  pointer-events: none;
+}
+
+body {
+  /* Даємо висоту на весь екран */
+  height: 100vh;
+}
+
+.button {
+  display: flex;
+  /* align-items = Вирівнювання по висоті, center = вирівнювання по центру */
+  align-items: center;
+  /* justify-content = вирівнювання по ширині , сenter = вирівнювання по центру */
+  justify-content: center;
+
+  width: 216px;
+  height: 50px;
+
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}

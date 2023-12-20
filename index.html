@@ -6,5 +6,21 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section>
+        <div>
+          <button data-modal-open class="button">КНОПКА ВІДКРИТТЯ МОДАЛКИ</button>
+        </div>
+      </section>
+    </main>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-button--close">X</button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
+  </body>
 </html>
