@@ -2,7 +2,23 @@
 // експорт - це коли ми продаєм товари в сусідні держави
 
 // @import =  привозить до цього файлу код з інших файлів вказаних за шляхами
-@import './components/section.scss';
-@import './components/section1.scss';
-@import './components/section2.scss';
-@import './components/section3.scss';
+@import './utils/vars';
+@import './utils/reset';
+
+@import './components/adventures';
+@import './components/hero';
+@import './components/section2';
+@import './components/team';
+@import './components/body';
+
+@import './components/test-block';
+// Налаштування SASS(утворення папки SCSS та відтворення компонентів та інших папок та файлів)
+// @import - директива яка дозволяє нам привозити код з інших файлів
+// partials(окремі файли) - partial- від слова part - частинка якийсь шматочок
+// Вкладеність (&)
+
+// кахут
+
+// Змінні
+// BEM(Методологія для іменування класів)
+// Практика
