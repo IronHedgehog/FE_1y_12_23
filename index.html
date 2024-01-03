@@ -3,71 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Браузер scss - НЕ РОЗУМІЄ -->
     <link rel="stylesheet" href="./css/index.css" />
-
     <title>Document</title>
   </head>
   <body>
-    <div class="animation-block"></div>
-
-    <header class="test">
-      <ul class="test-list">
-        <li class="test-item">
-          <a href="" class="test-item-link"></a>
-        </li>
-        <li class="test-item"><a href="" class="test-item-link">asd</a></li>
-        <li class="test-item"><a href="" class="test-item-link">asd</a></li>
-        <li class="test-item"><a href="" class="test-item-link">asd</a></li>
-      </ul>
+    <!-- BEM - методологія для іменування класів 
+    складається максимум з трьох слів
+    1) назва загального блоку або батьківського
+    2)Назва тегу(елементу)
+    3)Модифікатор(Завжди відповідає на питання який?)
+    -->
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link--green" href=""></a></li>
+          <li class="nav-item"><a class="nav-link" href=""></a></li>
+          <li class="nav-item"><a class="nav-link" href=""></a></li>
+          <li class="nav-item"><a class="nav-link" href=""></a></li>
+        </ul>
+      </nav>
     </header>
-
-    <section class="section">
-      <div>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-        viewport
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section1">
-      <div>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section2">
-      <div>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section3">
-      <div>
-        <ul class="list-unstyled">
-          <li>adjasdlkasdlkm</li>
-        </ul>
-      </div>
-    </section>
+    <main>
+      <section class="gallery">
+        <div class="container">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img class="galery-img" src="" alt="" />
+              <h3 class="galery-heading"></h3>
+              <p class="galery-text"></p>
+            </li>
+            <li class="gallery-item">
+              <img class="galery-img" src="" alt="" />
+              <h3 class="galery-heading"></h3>
+              <p class="galery-text"></p>
+            </li>
+            <li class="gallery-item">
+              <img class="galery-img" src="" alt="" />
+              <h3 class="galery-heading"></h3>
+              <p class="galery-text"></p>
+            </li>
+            <li class="gallery-item">
+              <img class="galery-img" src="" alt="" />
+              <h3 class="galery-heading"></h3>
+              <p class="galery-text"></p>
+            </li>
+            <li class="gallery-item">
+              <img class="galery-img" src="" alt="" />
+              <h3 class="galery-heading"></h3>
+              <p class="galery-text"></p>
+            </li>
+            <li class="gallery-item">
+              <img class="galery-img" src="" alt="" />
+              <h3 class="galery-heading"></h3>
+              <p class="galery-text"></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

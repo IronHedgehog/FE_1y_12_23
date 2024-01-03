@@ -1,14 +1,14 @@
 .test {
   width: 200px;
   height: 200px;
-  background-color: yellow;
+  background-color: var(--color);
   // & = назва селектору в якому ви записуєте амперсант(&)
   //   & = test
   &:hover {
-    background-color: green;
+    background-color: var(--main-color);
   }
   &-list {
-    background-color: chocolate;
+    background-color: $second-color;
   }
   //   & = test
   &-item {

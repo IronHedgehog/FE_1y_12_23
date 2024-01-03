@@ -1,3 +1,15 @@
+$bla: 20px;
 .section {
   width: 1px;
+}
+
+.blablabla {
+  $bla: 40px;
+  margin: $bla;
+  // Ця змінна існує тільки у класі blablabla
+}
+
+// Область бачимості це одні фігурні дужки {}
+.lalala {
+  margin-right: $bla;
 }
