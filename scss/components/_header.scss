@@ -1,0 +1,62 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: darkcyan;
+
+  // &= .header  header-nav
+}
+
+// той самий код на CSS
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: red;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: wheat;
+}
+
+.nav-link--main {
+  color: green;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: $dollar;
+}
+
+// Той самий код на SCSS
+// .nav {
+//   display: flex;
+//   justify-content: center;
+//   //& = nav
+//   &-list {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   // & =  nav
+//   &-item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+//   //  & = nav
+//   &-link {
+//     color: red;
+//     cursor: pointer;
+//     //&  = nav-link
+//     &:hover {
+//       color: wheat;
+//     }
+//     &--main {
+//       color: green;
+//     }
+//   }
+// }

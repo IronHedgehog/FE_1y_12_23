@@ -20,6 +20,39 @@ a {
   text-decoration: none;
 }
 
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: darkcyan;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: red;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: wheat;
+}
+
+.nav-link--green {
+  color: green;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 39px;
+}
+
 .section3 {
   width: 4px;
   margin-bottom: 30px;
