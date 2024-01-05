@@ -58,10 +58,10 @@ a {
   background-color: var(--main-color);
 }
 .test-list {
-  background-color: cornsilk;
+  background-color: red;
 }
 .test-item {
-  background-color: crimson;
+  background-color: blue;
 }
 .test-item-link {
   color: magenta;
