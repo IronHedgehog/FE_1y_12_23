@@ -1,0 +1,20 @@
+// Що таке міксин? - шаблон який може підстроюватись під певні обставини(динамічний шаблон)
+
+// спочатку має буть обовʼязково @
+// після собачки має бути назва
+// Після назви()
+// В круглих дужечках змінні з назвою яка буде відповідати тому параметру що буде постійно змінюватись
+// після круглих дужок мають їти фігурні дужки і у фігурних дужках код який повторюється
+
+@mixin borderPlus($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin main-text($font-size, $font-weight) {
+  color: $main-text;
+  font-family: Playfair Display;
+  font-size: $font-size;
+  font-style: normal;
+  font-weight: $font-weight;
+  line-height: normal;
+}

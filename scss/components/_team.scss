@@ -1,7 +1,12 @@
 .section1 {
   width: 2px;
 }
-
+// селектор класу section1 був розширений за допомогою плейсхолдеру флекс
 .section1 {
-  height: 10px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // extend = розширити,доповнений, унаслідувати ..
+  @extend %flex;
+  @extend %main-text;
 }

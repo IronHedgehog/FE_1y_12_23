@@ -2,24 +2,29 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: darkcyan;
+  // include - включати в себе
+  @include borderPlus(1px, solid, red);
 
-  // &= .header  header-nav
+  // &= .header  header;
 }
 
 // той самий код на CSS
 .nav {
   display: flex;
   justify-content: center;
+  @include borderPlus(10px, dashed, tomato);
 }
 
 .nav-list {
   display: flex;
   justify-content: center;
+  @include borderPlus(5px, dotted, crimson);
 }
 
 .nav-link {
   color: red;
   cursor: pointer;
+  @include main-text(24px, 700);
 }
 
 .nav-link:hover {
@@ -27,7 +32,7 @@
 }
 
 .nav-link--main {
-  color: green;
+  @include main-text(30px, 900);
 }
 
 .nav-item:not(:last-child) {
