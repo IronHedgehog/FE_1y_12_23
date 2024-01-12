@@ -22,6 +22,25 @@ $second-color: red;
 $margin: 30px;
 
 $dollar: 39px;
+$accent-color: #2196f3;
+
+$nothing: #ff0000;
 
 // змінні які ми утворюєму у SASS не компілюються а одразу повертають на своє місце значення
 // Область бачення = {}
+
+//  Приклад областей бачимості
+// мова яку знають в певній країні - наприклад в Україні - українська...
+// мова яку знають всі - то є глобальна область бачення(тому-що її знають всі)
+
+$language-global: 'English';
+
+.Ukraine {
+  $language-local: 'Ukrainian';
+  color: $language-local;
+}
+
+.USA {
+  content: $language-global;
+  color: red;
+}

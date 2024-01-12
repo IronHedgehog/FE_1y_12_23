@@ -1,0 +1,21 @@
+// .telegram-icon {
+//   background-image: url(../telegram.png);
+// }
+// .inst-icon {
+//   background-image: url(../inst.png);
+// }
+// .twitter-icon {
+//   background-image: url(../twitter.png);
+// }
+// .linkedIn-icon {
+//   background-image: url(../linkedIn.png);
+// }
+
+// @each то  є цикл який виконується стільки разів скільки назв ви прописали
+
+@each $social in telegram, inst, twitter, linkedIn, tiktok, instagram, viber, mail {
+  // #{$social} = кожного разу коли запускається цикл тут буде нове значення (спочатку telegram, після inst і так далі по черзі )
+  .#{$social}-icon {
+    background-image: url('../#{$social}.png');
+  }
+}

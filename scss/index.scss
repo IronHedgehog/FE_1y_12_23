@@ -6,6 +6,7 @@
 @import './utils/reset';
 @import './utils/mixins';
 @import './utils/placeholder';
+@import './utils/each';
 
 @import './components/header';
 // SCSS зганяй за цією адресою і принеси мені сюди увесь код який там знайдеш
@@ -19,6 +20,7 @@
 
 @import './components/test-block';
 
+@import './components/buttons';
 // @import - директива яка дозволяє нам привозити код з інших файлів
 // partials(окремі файли) - partial- від слова part - частинка якийсь шматочок
 // Вкладеність (&)
