@@ -44,3 +44,14 @@ $language-global: 'English';
   content: $language-global;
   color: red;
 }
+
+$name: 'Artem';
+$redColor: red;
+
+$nothing: null;
+
+// .welcome::before {
+//   font-size: 48px;
+//   font-weight: 800;
+//   content: 'Привіт, #{$name}';
+// }
