@@ -65,3 +65,68 @@ body {
 .container .label {
   margin-top: 0;
 }
+
+/* @media - дериктива для створення правил адаптації */
+/* screen - кольоровий монітор */
+/* print - стилі для принтерів факсів ітд */
+/* and - логічний оператор який означає "і"  */
+/* (мінімальни ширину на якій мають застусуватись стилі які ви запишите нижче) */
+
+/*Стоврюємо адаптацію для кольорових екранів та дісплеїв з мінімальною шириною 480px */
+
+.text {
+  width: 270px;
+
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.computer-text {
+  color: tomato;
+}
+
+/* mobile-first (min-width)*/
+/* Що основні стилі виконані для мобільного притсрою() */
+/* desktop-first(max-width) */
+/* основні стилі(всі стилі які ми записували до сьогодні)написані для PC */
+
+/* mobile-first */
+/* tablet-(планшет) */
+@media screen and (min-width: 768px) {
+  /*768px - 1199px */
+}
+/* PC */
+@media screen and (min-width: 1200px) {
+  /* 1200px + */
+}
+
+/* desktop-first */
+/* tablet-(планшет) */
+@media screen and (max-width: 1199px) {
+  /*768px - 1199px */
+  .text {
+    width: 354px;
+    /* Чому тут тільки ширина? */
+    /* Тому-що в порівнняні з стилями на минулому пристрої змінилась тільки ширина*/
+  }
+  .computer-text {
+    /* puff - прибирає елемент з сторінки */
+    display: none;
+  }
+}
+/* mobile(телефон) */
+@media screen and (max-width: 767px) {
+  /*768px - 1199px */
+  .text {
+    width: 450px;
+  }
+}
+
+:hover,
+:active {
+}
