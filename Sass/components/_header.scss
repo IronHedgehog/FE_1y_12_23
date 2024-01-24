@@ -8,3 +8,38 @@
     display: block;
   }
 }
+
+// ------------------SASS------------
+.block {
+  width: 50vw;
+  height: 50vh;
+  background-color: tomato;
+  @media screen and (max-width: 1199px) {
+    /* Різниця коду між SASS та CSS у тому що у SASS нам не треба прописувати.У SASS нам достатньо вкласти медіа правило у вже існуючий селектор класу і в такому випадку ми можемо не повторювати написання сплектору */
+    width: 80vw;
+    background-color: aqua;
+  }
+  @media screen and (max-width: 991px) {
+  }
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (max-width: 575px) {
+  }
+}
+
+.block {
+  width: 20vh;
+  background-color: darkmagenta;
+  // Альбомна версія мобільного пристрою
+  @media screen and (min-width: 576px) {
+  }
+  // стилі для маленьких планшетів
+  @media screen and (min-width: 768px) {
+  }
+  // Стилі для ноутбуків
+  @media screen and (min-width: 992px) {
+  }
+  // Для компʼютерів,телевізорів (1200+)
+  @media screen and (min-width: 1200px) {
+  }
+}
