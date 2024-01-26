@@ -1,60 +1,44 @@
-!
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- meta теги - передають інформацію браузеру  -->
-    <!-- Кодування символів UTF-8 -->
-    <meta charset="UTF-8" />
-    <!-- viewport  - область роботи-->
-    <!-- content = правильно розраховує ширину браузера -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero voluptatum minima
-      quos accusamus. Soluta tenetur quibusdam voluptate nam veniam.
-    </p>
+    <header class="header">
+      <a class="logo" href=""><span class="header-web">Web</span>Studio</a>
 
-    <p class="computer-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusantium et itaque soluta
-      nulla voluptates provident odio illum, error eligendi unde quae id, asperiores esse temporibus
-      similique culpa dicta quas modi. Non, soluta? Asperiores perferendis ducimus ut ad aperiam
-      quis, nostrum necessitatibus quibusdam labore ipsa aspernatur eaque assumenda molestias id
-      itaque, dolorem unde consectetur? Quae rem accusamus voluptatibus repellendus consequatur, aut
-      consequuntur nam magnam laudantium. Autem, repudiandae ex voluptatibus aut fugit atque commodi
-      quaerat, obcaecati pariatur earum rem harum. Iste consequatur unde error, voluptate architecto
-      fugit, ab officia aliquam ipsum ex dicta beatae vero atque nesciunt repellendus.
-      Necessitatibus sunt harum similique, veritatis totam facilis iste perferendis tempora,
-      voluptatibus officia praesentium. Aliquam repellat praesentium placeat, exercitationem quae
-      error voluptatibus magnam mollitia amet, sit corporis iure repudiandae id quo nesciunt veniam
-      nihil voluptas adipisci pariatur officiis atque, eveniet suscipit. Officia mollitia vel
-      consectetur recusandae blanditiis perferendis eligendi quae quis, sint corporis,
-      exercitationem sed repellat est illo dolorem voluptatem aliquid voluptatum impedit! Sed
-      aspernatur quia voluptates explicabo deleniti provident quam? Possimus, minus ipsa? Quibusdam
-      sunt sapiente temporibus enim itaque cum eligendi eum consectetur tempore rerum quos, ipsam
-      perferendis labore rem eveniet neque ducimus quis facere voluptatem odit nihil perspiciatis
-      tempora molestias. Vero, nobis?
-    </p>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="nav-link">Студія</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Портфоліо</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="block"></div>
+      <ul class="header-contacts">
+        <li class="contact-item">
+          <a href="" class="contact-link">info@devstudio.com</a>
+        </li>
+        <li class="contact-item">
+          <a href="" class="contact-link">+38 096 111 11 11</a>
+        </li>
+      </ul>
 
-    <div class="container responsive">
-      <p class="label">I'm a responsive container</p>
-    </div>
-    <div class="container adaptive">
-      <p class="label">I'm an adaptive container</p>
-    </div>
+      <button class="menu-button">
+        <svg class="icon-menu">
+          <use href="./symbol-defs.svg#menu"></use>
+        </svg>
+      </button>
+    </header>
   </body>
+  <script src="./index.js"></script>
 </html>
