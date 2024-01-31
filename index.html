@@ -8,37 +8,33 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo" href=""><span class="header-web">Web</span>Studio</a>
-
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="" class="nav-link">Студія</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Портфоліо</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="header-contacts">
-        <li class="contact-item">
-          <a href="" class="contact-link">info@devstudio.com</a>
-        </li>
-        <li class="contact-item">
-          <a href="" class="contact-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
-
-      <button class="menu-button">
-        <svg class="icon-menu">
+      <button class="open-menu--button">
+        <svg class="menu-icon">
           <use href="./symbol-defs.svg#menu"></use>
         </svg>
       </button>
+      <div class="mobile-menu">
+        <button>
+          <svg class="close-menu-icon">
+            <use href="./symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="">Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="">Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+        </ul>
+      </nav>
     </header>
   </body>
-  <script src="./index.js"></script>
 </html>
