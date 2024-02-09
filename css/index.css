@@ -1,9 +1,12 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
 }
 
 ul,
@@ -15,114 +18,8 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 480px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-.advantages {
-  padding: 60px 0;
-}
-@media screen and (min-width: 1200px) {
-  .advantages {
-    padding: 94px 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages-list {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-item {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages-item {
-    width: 270px;
-    margin-bottom: 0px;
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .advantages-item:nth-child(3n) {
-    margin-bottom: 0px !important;
-  }
-}
-
-.advantages-item::before {
-  content: "";
+img {
   display: block;
-  width: 450px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-@media screen and (min-width: 768px) {
-  .advantages-item::before {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages-item::before {
-    width: 270px;
-  }
-}
-
-.advantages-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.advantages-heading {
-  /* УВАГА ДО ДЕТАЛЕЙ */
-  margin-bottom: 10px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.advantages-description {
-  /* Ідейні міркування, і навіть початок повсякденної роботи з формування позиції. */
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: #757575;
+  max-width: 100%;
+  height: auto;
 }

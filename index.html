@@ -7,45 +7,25 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <!-- За відступ по висоті відповідає секція -->
-      <section class="advantages">
-        <!-- За відступ по ширині відповідає контейнер -->
-        <div class="container">
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <h3 class="advantages-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="advantages-description">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <h3 class="advantages-heading">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="advantages-description">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <h3 class="advantages-heading">ПЛАНУВАННЯ</h3>
-              <p class="advantages-description">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <h3 class="advantages-heading">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="advantages-description">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container"></div>
-      </section>
-      <section class="team">
-        <div class="container"></div>
-      </section>
-    </main>
+    <!-- <img src="./imgs/book-1x.webp" alt="" width="394" height="280" />
+    <img src="./imgs/book-2x.webp" alt="" width="394" height="280" />
+    <img src="./imgs/book-3x.webp" alt="" width="394" height="280" /> -->
+
+    <picture>
+      <source
+        srcset="./imgs/book-1x.webp 1x, ./imgs/book-2x.webp 2x, ./imgs/book-3x.webp 3x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./imgs/imgtab-1x.webp 1x, ./imgs/imgtab-2x.webp 2x, ./imgs/imgtab-3x.webp 3x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./imgs/imgmob-1x.webp 1x, ./imgs/imgmob-2x.webp 2x, ./imgs/imgmob-3x.webp 3x"
+        media="(min-width:0px)"
+      />
+      <!-- img(має бути обовʼязково) - якщо жоден з source не підійде, підключиться img -->
+      <img src="./imgs/imgmob-3x.webp" alt="" />
+    </picture>
   </body>
 </html>
