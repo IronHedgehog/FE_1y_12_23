@@ -1,4 +1,7 @@
 @import './utils/reset';
+@import './utils/container';
+@import './utils/visually-hidden';
+@import './components/projects';
 
 // import то деректива яка дозволяє привозити усю інформацію з різних файлів в один
 // За для цього треба написати @import і вказати шлях за яким знаходиться необхідний код
