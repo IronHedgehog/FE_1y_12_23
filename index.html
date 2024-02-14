@@ -7,11 +7,22 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <img src="./imgs/book-1x.webp" alt="" width="394" height="280" />
+    <img src="./imgs/book-1x.webp" alt="" width="394" height="280" />
     <img src="./imgs/book-2x.webp" alt="" width="394" height="280" />
-    <img src="./imgs/book-3x.webp" alt="" width="394" height="280" /> -->
+    <img src="./imgs/book-3x.webp" alt="" width="394" height="280" />
 
+    <!-- picture - дозволяє використовувати техніку кадрування -->
     <picture>
+      <!-- ми маємо обовʼязково виділити 3 пристрої(телефон ,планшет та компʼютер) -->
+      <!-- srcset - зображення через кому -->
+      <!-- 1x,2x,3x = ДЕскриптор(пояснює браузеру скільки іксів у зображення) -->
+      <!--
+
+        @media screen and (min-width:1200px){
+
+        }
+         media="(min-width:1200px)" - використовувати ці зображення у випадку якщо мінімалина ширина вікна досягла 1200px
+        -->
       <source
         srcset="./imgs/book-1x.webp 1x, ./imgs/book-2x.webp 2x, ./imgs/book-3x.webp 3x"
         media="(min-width:1200px)"
