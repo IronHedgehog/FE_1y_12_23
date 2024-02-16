@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.adventure-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 10vh;
+  width: 100%;
+  background-color: tomato;
+}
+
+.main {
+  height: 80vh;
+  width: 100%;
+  background-color: grey;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: tomato;
+}
